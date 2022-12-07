@@ -13,9 +13,28 @@
   Moengage = moe({
         app_id: "10DJMFAOOYJDCPCY0O0IFQY5", // here goes your App Id
         debug_logs: 0,
-        swPath: "WEB_SDK/serviceworker.js"
+        swPath: "/WEB_SDK/serviceworker.js"
       });
   </script>
+  
+  
+  <script type="text/javascript">
+    Moengage.add_first_name("Diksha");
+    Moengage.add_last_name("Sh");
+    Moengage.add_email("diksha06072001@gmail.com");
+    Moengage.add_mobile("8888888888");
+    Moengage.add_user_name("Diksha");
+    Moengage.add_unique_user_id(3455);
+  </script>
+  <script type="text/javascript">
+
+    Moengage.track_event("EVENT_NAME_2", {
+   
+    "USER_ATTRIBUTE_USER_EMAIL": "diksha06072001@gmail.com", // numeric value
+    
+    });
+  </script> 
+  
   
 </head>
 <body>
