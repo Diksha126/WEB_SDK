@@ -13,7 +13,11 @@
   Moengage = moe({
         app_id: "10DJMFAOOYJDCPCY0O0IFQY5", // here goes your App Id
         debug_logs: 1,
-        swPath: "/WEB_SDK/serviceworker.js"
+        swPath: "/WEB_SDK/serviceworker.js",
+        cards: {
+        enable: true,
+        placeholder: '#Card-css' // CSS selector of inbox icon 
+         } 
       });
   </script>
   
@@ -40,6 +44,7 @@
 <body>
 
 <h2>WEB SDK INTEGRATION SAMPLE</h2>
+  <button id="Card-css"> Hello </button>
 
 </body>
 </html>
